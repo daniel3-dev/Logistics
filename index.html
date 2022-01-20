@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LOGISTICS</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/2d0c8617d6.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!--
+          TODO
+            - Add Carousel to video in section 1
+            x Fix logo icon size in navbar
+            - Create 'Get A Quote' form
+            - In section 2 form, make active tab bold w/ js and add blue underline
+            - In section 2 form, change select arrow colour to orange
+            - In section 2 form, add country flag to selection input
+            - In section 2, add background image to right half, change it to reflect selected POO option
+            - Create button hover effects
+            - Compress Images
+            - Make Section 7 a carousel
+      -->
+    <nav>
+      <div class="nav-inner">
+        <div class="nav-left">
+          <i class="fas fa-ship"></i>
+          <a href="" class="logo">LOGISTICS</a>
+        </div>
+        <div class="nav-right">
+          <a href="">Home</a>
+          <a href="">Services</a>
+          <a href="">Company</a>
+          <a href="">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <section class="one">
+      <div class="one-inner">
+        <div class="left">
+          <video src="Video/video.mp4" autoplay muted loop></video>
+        </div>
+        <div class="right">
+          <h1>Shipping Goods Worldwide</h1>
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. In
+            fermentum et sollicitudin ac orci phasellus egestas. Curabitur vitae
+            nunc sed velit. Dolor sit amet consectetur adipiscing elit
+            pellentesque. Risus feugiat in ante metus dictum at tempor. At risus
+            viverra adipiscing at in tellus.
+          </p>
+          <br />
+          <button class="blue">Get a Quote</button>
+        </div>
+      </div>
+    </section>
+    <section class="two">
+      <div class="two-inner">
+        <br />
+        <br />
+        <h1>World's Largest Ocean Transport Company</h1>
+        <br />
+        <br />
+        <div class="two-grid">
+          <div class="two-grid-item">
+            <i class="far fa-flag"></i>
+            <div style="margin-left: 3vw">
+              <h1>195</h1>
+              <p>Countries</p>
+            </div>
+          </div>
+          <div class="two-grid-item">
+            <i class="fas fa-route"></i>
+            <div style="margin-left: 3vw">
+              <h1>443</h1>
+              <p>Routes</p>
+            </div>
+          </div>
+          <div class="two-grid-item">
+            <i class="fas fa-anchor"></i>
+            <div style="margin-left: 3vw">
+              <h1>325</h1>
+              <p>Ports</p>
+            </div>
+          </div>
+          <div class="two-grid-item">
+            <i class="fas fa-ship" style="color: #000"></i>
+            <div style="margin-left: 3vw">
+              <h1>769</h1>
+              <p>Vessels</p>
+            </div>
+          </div>
+        </div>
+        <br />
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        <br />
+        <button class="outline">About Ocean Tracking</button>
+      </div>
+      <div class="two-form">
+        <div class="heading">
+          <p>Tracking</p>
+          <p class="active">Schedule</p>
+          <p>Local Office</p>
+        </div>
+        <div class="dash"></div>
+        <form action="">
+          <label for="poo">Port of Origin</label>
+          <select name="poo" id="poo">
+            <option value="shanghai">Shanghai</option>
+            <option value="singapore">Singapore</option>
+            <option value="ningbo-zhoushan">Ningbo-Zhoushan</option>
+            <option value="shenzhen">Shenzhen</option>
+            <option value="Guangzhou">Guangzhou</option>
+            <option value="Qingdao">Qingdao</option>
+            <option value="Busan">Busan</option>
+            <option value="hong-kong">Hong Kong</option>
+            <option value="tianjin">Tianjin</option>
+            <option value="rotterdam">Rotterdam</option>
+          </select>
+
+          <label for="pod">Port of Origin</label>
+          <select name="pod" id="pod">
+            <option value="shanghai">Shanghai</option>
+            <option value="singapore">Singapore</option>
+            <option value="ningbo-zhoushan">Ningbo-Zhoushan</option>
+            <option value="shenzhen">Shenzhen</option>
+            <option value="Guangzhou">Guangzhou</option>
+            <option value="Qingdao">Qingdao</option>
+            <option value="Busan">Busan</option>
+            <option value="hong-kong">Hong Kong</option>
+            <option value="tianjin">Tianjin</option>
+            <option value="rotterdam">Rotterdam</option>
+          </select>
+
+          <label for="date">Shipping Date</label>
+          <input type="date" name="date" id="date" />
+
+          <label for="direct"
+            ><input type="checkbox" name="direct" id="direct" />Direct
+            Shipping</label
+          >
+          <br />
+          <label for="direct"
+            ><input type="checkbox" name="direct" id="direct" />High-Risk
+            Cargo</label
+          >
+          <br />
+          <label for="direct"
+            ><input type="checkbox" name="direct" id="direct" />Hazardous
+            Cargo</label
+          >
+          <div class="dash"></div>
+          <div class="centre">
+            <button class="big-blue" style="margin-bottom: 5vh">
+              Search Schedule
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <section class="three">
+      <div class="three-inner">
+        <h1>Our Services</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget
+          aliquet nibh praesent tristique. Etiam dignissim diam quis enim
+          lobortis scelerisque fermentum dui faucibus. Maecenas accumsan lacus
+          vel facilisis. Quam vulputate dignissim suspendisse in est ante in
+          nibh. Dui ut ornare lectus sit amet est placerat in. Diam maecenas
+          ultricies mi eget mauris pharetra et ultrices neque. Sit amet
+          consectetur adipiscing elit pellentesque habitant morbi tristique. Mus
+          mauris vitae ultricies leo integer malesuada nunc vel. Fermentum dui
+          faucibus in ornare.
+        </p>
+        <br />
+        <button class="white-outline">Learn More</button>
+      </div>
+    </section>
+    <section class="four">
+      <div class="row">
+        <div class="four-left-one"></div>
+        <div class="four-right-one">
+          <div class="four-right-one-inner">
+            <h1>Standard Container Shipping</h1>
+            <br />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Quam
+              pellentesque nec nam aliquam sem et tortor. Velit ut tortor
+              pretium viverra suspendisse potenti nullam ac.
+            </p>
+            <br />
+            <div class="flex">
+              <i class="fas fa-check"></i>
+              <p>Faucibus vitae aliquet nec ullamcorper.</p>
+            </div>
+            <div class="flex">
+              <i class="fas fa-check"></i>
+              <p>Augue interdum velit euismod in.</p>
+            </div>
+            <div class="flex">
+              <i class="fas fa-check"></i>
+              <p>Donec ac odio tempor orci dapibus.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="four-left-two">
+          <div class="four-right-one-inner">
+            <h1>Chemical and High Risk Goods With Special Service</h1>
+            <br />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus
+              faucibus ornare suspendisse sed nisi. Varius sit amet mattis
+              vulputate enim.
+            </p>
+            <br />
+            <div class="flex">
+              <i class="fas fa-check"></i>
+              <p>Et netus et malesuada fames ac turpis.</p>
+            </div>
+            <div class="flex">
+              <i class="fas fa-check"></i>
+              <p>Non enim praesent elementum facilisis.</p>
+            </div>
+          </div>
+        </div>
+        <div class="four-right-two"></div>
+      </div>
+      <div class="row">
+        <div class="four-left-three"></div>
+        <div class="four-right-three">
+          <div class="four-right-one-inner">
+            <h1>Trans-Pacific Routes</h1>
+            <br />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Quam
+              pellentesque nec nam aliquam sem et tortor. Velit ut tortor
+              pretium viverra suspendisse potenti nullam ac.
+            </p>
+            <br />
+            <div class="flex">
+              <i class="fas fa-check"></i>
+              <p>Quam id leo in vitae turpis massa sed.</p>
+            </div>
+            <div class="flex">
+              <i class="fas fa-check"></i>
+              <p>Pharetra pharetra massa massa ultricies.</p>
+            </div>
+            <div class="flex">
+              <i class="fas fa-check"></i>
+              <p>Et malesuada fames ac turpis egestas.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="five">
+      <div class="five-hero"></div>
+      <div class="five-inner">
+        <div class="five-left">
+          <h1>The Greatest Shipping Company</h1>
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Nulla
+            facilisi etiam dignissim diam quis enim lobortis. Interdum velit
+            euismod in pellentesque massa placerat duis ultricies lacus. Neque
+            viverra justo nec ultrices dui sapien eget. Diam sollicitudin tempor
+            id.
+          </p>
+        </div>
+        <div class="five-right">
+          <i class="test fas fa-ship"></i>
+          <h1>LOGISTICS</h1>
+        </div>
+      </div>
+    </section>
+    <section class="six">
+      <div class="six-inner">
+        <div class="six-splash">
+          <video src="Video/Globe.mp4" autoplay muted loop></video>
+        </div>
+        <br />
+        <br />
+        <div class="flex">
+          <div class="six-item">
+            <h1>97%</h1>
+            <p style="font-weight: 600">On Time Shipments</p>
+            <br />
+            <p>
+              Lectus nulla at volutpat diam ut venenatis tellus in. Pretium
+              aenean pharetra magna ac placerat vestibulum.
+            </p>
+          </div>
+          <div class="six-item">
+            <h1>24h</h1>
+            <p style="font-weight: 600">All Containers Underway</p>
+            <br />
+            <p>
+              Ultricies tristique nulla aliquet enim tortor at. Sem nulla
+              pharetra diam sit amet nisl suscipit.
+            </p>
+          </div>
+          <div class="six-item">
+            <h1>890+</h1>
+            <p style="font-weight: 600">Partners Worldwide</p>
+            <br />
+            <p>
+              Condimentum mattis pellentesque id nibh tortor. Elementum nisi
+              quis eleifend quam adipiscing vitae.
+            </p>
+          </div>
+          <div class="six-item">
+            <h1>40+</h1>
+            <p style="font-weight: 600">Years Sailing Experience</p>
+            <br />
+            <p>
+              Lacus sed turpis tincidunt id aliquet risus feugiat in. Et
+              malesuada fames ac turpis egestas.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="seven">
+      <div class="seven-inner">
+        <div class="seven-left"></div>
+        <div class="seven-right">
+          <h1>"Professional Service and Trusted for Delivering Goods"</h1>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
