@@ -14,7 +14,6 @@
   <body>
     <!--
           TODO
-            - Add Carousel to video in section 1
             x Fix logo icon size in navbar
             - Create 'Get A Quote' form
             - In section 2 form, make active tab bold w/ js and add blue underline
@@ -24,7 +23,14 @@
             - Create button hover effects
             - Compress Images
             - Make Section 7 a carousel
-            -This is just a test
+            - Prevent user from scrolling when modal is open
+            - Fix modal close position
+            - Arrow function for modal
+            - Make 'vars' in modal script let or const
+      -->
+
+      <!--
+          Started work on footer, added 'get a quote' modal, worked on section 7 carousel
       -->
     <nav>
       <div class="nav-inner">
@@ -58,7 +64,7 @@
             viverra adipiscing at in tellus.
           </p>
           <br />
-          <button class="blue">Get a Quote</button>
+          <button class="blue" id="quoteModalButton">Get a Quote</button>
         </div>
       </div>
     </section>
@@ -340,7 +346,12 @@
     </section>
     <section class="seven">
       <div class="seven-inner">
-        <div class="seven-left"></div>
+        <div class="seven-left" id="slide">
+          <div class="carousel-controls">
+            <i class="fas fa-chevron-left" id="previous"></i>
+            <i class="fas fa-chevron-right" id="next"></i>
+          </div>
+        </div>
         <div class="seven-right">
           <h1>"Professional Service and Trusted for Delivering Goods"</h1>
           <br />
@@ -370,5 +381,23 @@
       </div>
       </div>
     </section>
+    <footer>
+      <div class="footer-inner">
+        <div class="footer-column">
+          <h1 class="logo">LOGISTICS</h1>
+        </div>
+        <div class="footer-column"></div>
+        <div class="footer-column"></div>
+        <div class="footer-column"></div>
+      </div>
+    </footer>
+
+    <div class="modal" id="quoteModal">
+      <div class="modal-inner">
+        <span class="close">&times;</span>
+        <p>Hello from the quote modal!</p>
+      </div>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
