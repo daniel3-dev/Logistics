@@ -21,16 +21,22 @@
             - In section 2 form, add country flag to selection input
             - In section 2, add background image to right half, change it to reflect selected POO option
             - Create button hover effects
-            - Compress Images
+            x Compress Images
             - Make Section 7 a carousel
             - Prevent user from scrolling when modal is open
             - Fix modal close position
             - Arrow function for modal
             - Make 'vars' in modal script let or const
+            - Compress video
+            - Add image alts
+            - Arrow functions
+            - Add timer to carousel
+            - Find higher resolution image of carol
+            - Add transitions to carousel
       -->
 
       <!--
-          Started work on footer, added 'get a quote' modal, worked on section 7 carousel
+          Finished carousel, compressed images
       -->
     <nav>
       <div class="nav-inner">
@@ -346,27 +352,22 @@
     </section>
     <section class="seven">
       <div class="seven-inner">
-        <div class="seven-left" id="slide">
+        <div class="seven-left">
+          <div class="slide"><img src="Images/founder.jpg" alt=""></div>
+          <div class="slide"><img src="Images/carol.png" alt=""></div>
+          <div class="slide"><img src="Images/soren.png" alt=""></div>
           <div class="carousel-controls">
-            <i class="fas fa-chevron-left" id="previous"></i>
-            <i class="fas fa-chevron-right" id="next"></i>
+            <i class="fas fa-circle" onclick="changeSlide(1)"></i>
+            <i class="fas fa-circle" onclick="changeSlide(2)"></i>
+            <i class="fas fa-circle" onclick="changeSlide(3)"></i>
           </div>
         </div>
         <div class="seven-right">
-          <h1>"Professional Service and Trusted for Delivering Goods"</h1>
+          <h1 id="slideH1"></h1>
           <br />
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Pretium
-            fusce id velit ut tortor pretium viverra suspendisse. Id faucibus
-            nisl tincidunt eget nullam non. Felis donec et odio pellentesque
-            diam volutpat commodo. Quis hendrerit dolor magna eget.
-          </p>
+          <p id="slideP"></p>
           <br />
-          <p>
-            <span style="font-weight: 600">Thomas Wake</span>, Founder & CEO of
-            <span style="font-weight: 900">LOGISTICS</span>
-          </p>
+          <p id="bio"></p>
         </div>
       </div>
     </section>
