@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap');
 
+/*################################ Base Styles ################################*/
+
 * {
   margin: 0;
   padding: 0;
@@ -76,6 +78,8 @@ button:hover {
   cursor: pointer;
 }
 
+/*################################## Navbar ###################################*/
+
 .nav-inner {
   display: flex;
   justify-content: space-between;
@@ -92,6 +96,8 @@ button:hover {
   font-weight: 900;
   font-size: 1.7rem;
 }
+
+/*################################ Section One ################################*/
 
 .one {
   width: 100%;
@@ -142,6 +148,8 @@ button:hover {
   color: #fff;
 }
 
+/*################################ Section Two ################################*/
+
 .two {
   width: 100%;
   height: 100vh;
@@ -170,13 +178,24 @@ button:hover {
   display: flex;
 }
 
-.two-grid-item .far {
+.two-grid-item .far,
+.two-grid .fas {
   font-size: 3.5rem;
 }
 
-.two-grid-item .fas {
-  font-size: 3.5rem;
+.outline {
+  height: 2.5rem;
+  font-size: 1rem;
+  border: 2px solid #000;
+  border-radius: 5px;
+  margin-bottom: 5vh;
+  background-color: #fff;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  font-weight: 600;
 }
+
+/*Schedule Form*/
 
 .two-form {
   background-color: #fff;
@@ -207,16 +226,10 @@ button:hover {
   margin-bottom: 8vh;
 }
 
-.outline {
-  height: 2.5rem;
-  font-size: 1rem;
-  border: 2px solid #000;
-  border-radius: 5px;
-  margin-bottom: 5vh;
-  background-color: #fff;
-  padding-left: 1vw;
-  padding-right: 1vw;
-  font-weight: 600;
+.centre {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .big-blue {
@@ -229,11 +242,7 @@ button:hover {
   font-size: 1.5em;
 }
 
-.centre {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
+/*############################### Section Three ###############################*/
 
 .three {
   width: 100%;
@@ -269,6 +278,8 @@ button:hover {
   color: #fff;
 }
 
+/*################################ Section Four ###############################*/
+
 .four {
   padding-top: 10vh;
 }
@@ -301,14 +312,14 @@ button:hover {
   font-size: 2rem;
 }
 
-.fa-check {
-  color: #00c12c;
-  margin-right: 2vw;
-}
-
 .flex {
   display: flex;
   margin-bottom: 1.5vh;
+}
+
+.fa-check {
+  color: #00c12c;
+  margin-right: 2vw;
 }
 
 .four-left-two {
@@ -332,6 +343,8 @@ button:hover {
   display: flex;
   justify-content: flex-end;
 }
+
+/*################################ Section Five ###############################*/
 
 .five {
   padding-top: 10vh;
@@ -369,7 +382,7 @@ button:hover {
   width: 50%;
 }
 
-.test {
+.five-right .fa-ship {
   color: #000;
   font-size: 5rem;
 }
@@ -377,6 +390,8 @@ button:hover {
 .five-right h1 {
   font-size: 4rem;
 }
+
+/*################################ Section Six ################################*/
 
 .six-inner {
   margin: 0 auto;
@@ -403,6 +418,8 @@ button:hover {
   margin-top: 1vh;
 }
 
+/*################################ Section Seven ##############################*/
+
 .seven {
   width: 100%;
   padding-top: 15vh;
@@ -421,6 +438,8 @@ button:hover {
   border-radius: 7px;
 }
 
+/*Carousel*/
+
 .slide {
   border-radius: 7px;
   width: 100%;
@@ -435,20 +454,29 @@ button:hover {
   height: auto;
 }
 
+.carousel-controls {
+  display: flex;
+  justify-content: center;
+}
+
 .seven-left .fas {
   font-size: 1rem;
   margin-right: 1vw;
   margin-top: 2vw;
 }
 
+.activeSlide {
+  color: #31c4ff;
+}
+
+/* */
+
 .seven-right {
   width: 50%;
   padding: 0px 5vw 0px 5vw;
 }
 
-.view {
-  opacity: 1;
-}
+/*################################ Section Eight ##############################*/
 
 .eight {
   width: 100%;
@@ -474,6 +502,8 @@ button:hover {
   align-items: flex-end;
 }
 
+/*################################### Footer ##################################*/
+
 .footer-inner {
   width: 80vw;
   padding-top: 10vh;
@@ -486,6 +516,8 @@ button:hover {
   height: 100px;
   margin-right: 5%;
 }
+
+/*################################# Quote Modal ###############################*/
 
 .modal {
   display: none;
@@ -516,13 +548,4 @@ button:hover {
 
 .close:hover {
   cursor: pointer;
-}
-
-.carousel-controls {
-  display: flex;
-  justify-content: center;
-}
-
-.activeSlide {
-  color: #31c4ff;
 }
