@@ -1,12 +1,22 @@
 //Hamburger Menu Code #############################################
 let navLeft = document.getElementsByClassName('nav-left')[0];
 let menuItems = document.getElementsByClassName('menu-items')[0];
+let overlay = document.getElementsByClassName('overlay')[0];
+let lines = document.getElementsByClassName('line');
+
+/*window.onload = function () {
+  for (var i = 0; i < lines.length; i++) {
+    lines[i].style.transform = 'rotate(0deg)';
+  }
+};*/
 
 function toggleHamburger() {
   if (window.getComputedStyle(menuItems, null).display == 'none') {
     menuItems.style.display = 'flex';
+    overlay.style.display = 'block';
   } else {
     menuItems.style.display = 'none';
+    overlay.style.display = 'none';
   }
 }
 
