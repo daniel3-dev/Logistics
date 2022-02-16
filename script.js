@@ -1,3 +1,6 @@
+//Hamburger Menu Code #############################################
+let checkbox = document.getElementsByClassName('checkbox')[0];
+
 //Modal Code ######################################################
 var quoteModal = document.getElementById('quoteModal');
 var quoteModalButton = document.getElementById('quoteModalButton');
