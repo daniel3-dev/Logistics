@@ -1,5 +1,14 @@
 //Hamburger Menu Code #############################################
-let checkbox = document.getElementsByClassName('checkbox')[0];
+let navLeft = document.getElementsByClassName('nav-left')[0];
+let menuItems = document.getElementsByClassName('menu-items')[0];
+
+function toggleHamburger() {
+  if (window.getComputedStyle(menuItems, null).display == 'none') {
+    menuItems.style.display = 'flex';
+  } else {
+    menuItems.style.display = 'none';
+  }
+}
 
 //Modal Code ######################################################
 var quoteModal = document.getElementById('quoteModal');
